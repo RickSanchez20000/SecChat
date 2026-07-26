@@ -6,5 +6,8 @@ dependencies = [
     "cryptography"
 ]
 
+[tool.flet]
+uses = ["flet"]
+
 [tool.flet.app]
-module = "main"
+path = "."

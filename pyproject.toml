@@ -1,0 +1,10 @@
+[project]
+name = "secchat"
+version = "1.0.0"
+dependencies = [
+    "flet",
+    "cryptography"
+]
+
+[tool.flet.app]
+module = "main"

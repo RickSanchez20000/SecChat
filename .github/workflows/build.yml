@@ -29,7 +29,7 @@ jobs:
 
     - name: Compila l'APK per Android
       run: |
-        flet build apk --yes
+        flet build apk --yes --module-name main.py
 
     - name: Salva l'APK come file scaricabile
       uses: actions/upload-artifact@v4

@@ -18,7 +18,7 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Installa Flet
+    - name: Installa Flet e Dipendenze
       run: |
         python -m pip install --upgrade pip
         pip install flet cryptography
@@ -29,7 +29,7 @@ jobs:
 
     - name: Compila l'APK per Android
       run: |
-        flet build apk --yes --module-name main.py
+        flet build apk --yes
 
     - name: Salva l'APK come file scaricabile
       uses: actions/upload-artifact@v4

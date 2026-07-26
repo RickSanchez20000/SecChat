@@ -6,8 +6,5 @@ dependencies = [
     "cryptography"
 ]
 
-[tool.flet]
-uses = ["flet"]
-
 [tool.flet.app]
-path = "."
+path = "src"

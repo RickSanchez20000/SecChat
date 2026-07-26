@@ -21,7 +21,11 @@ jobs:
     - name: Installa Flet
       run: |
         python -m pip install --upgrade pip
-        pip install flet
+        pip install flet cryptography
+
+    - name: Accetta licenze Android
+      run: |
+        yes | flutter doctor --android-licenses || true
 
     - name: Compila l'APK per Android
       run: |

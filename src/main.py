@@ -53,7 +53,7 @@ def main(page: ft.Page):
                 "Crea una Stanza (Host)",
                 width=380,
                 height=45,
-                style=ft.ButtonStyle(color=ft.colors.WHITE, bgcolor=ft.colors.BLUE_700),
+                style=ft.ButtonStyle(color=ft.Colors.WHITE, bgcolor=ft.Colors.BLUE_700),
                 on_click=go_to_host,
             ),
             ft.ElevatedButton(
@@ -137,7 +137,7 @@ def main(page: ft.Page):
             txt_stanza,
             ft.Container(
                 content=status_host,
-                border=ft.border.all(1, ft.colors.OUTLINE),
+                border=ft.border.all(1, ft.Colors.OUTLINE),
                 border_radius=5,
                 height=200,
                 width=380,
@@ -228,7 +228,7 @@ def main(page: ft.Page):
             ft.Text("UNISCITI A UNA STANZA", size=22, weight=ft.FontWeight.BOLD),
             ft.Container(
                 content=status_client,
-                border=ft.border.all(1, ft.colors.OUTLINE),
+                border=ft.border.all(1, ft.Colors.OUTLINE),
                 border_radius=5,
                 height=150,
                 width=380,
@@ -241,7 +241,7 @@ def main(page: ft.Page):
             ft.ElevatedButton(
                 "Connettiti",
                 width=380,
-                style=ft.ButtonStyle(color=ft.colors.WHITE, bgcolor=ft.colors.GREEN_700),
+                style=ft.ButtonStyle(color=ft.Colors.WHITE, bgcolor=ft.Colors.GREEN_700),
                 on_click=connettiti_click,
             ),
             ft.OutlinedButton("Indietro", width=200, on_click=lambda _: page.go("/")),
@@ -305,7 +305,7 @@ def main(page: ft.Page):
             ),
             ft.Container(
                 content=chat_box,
-                border=ft.border.all(1, ft.colors.OUTLINE),
+                border=ft.border.all(1, ft.Colors.OUTLINE),
                 border_radius=5,
                 expand=True,
             ),
@@ -313,8 +313,8 @@ def main(page: ft.Page):
                 [
                     txt_msg,
                     ft.IconButton(
-                        icon=ft.icons.SEND,
-                        icon_color=ft.colors.BLUE_400,
+                        icon=ft.Icons.SEND,
+                        icon_color=ft.Colors.BLUE_400,
                         on_click=invia_messaggio,
                     ),
                 ]
